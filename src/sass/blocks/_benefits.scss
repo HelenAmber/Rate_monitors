@@ -41,5 +41,9 @@
             line-height: 29px;
             text-align: center;
         }
+        a{
+            color: $main-color;
+            text-decoration: underline;
+        }
     }
 }

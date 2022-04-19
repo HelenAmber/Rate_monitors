@@ -1,5 +1,6 @@
 @import '_variables.scss';
 
+
 * {
     font-family: 'Museo Sans Cyrl', sans-serif;
 }
@@ -12,3 +13,4 @@
 @import 'blocks/header';
 @import 'blocks/buttons';
 @import 'blocks/benefits';
+@import '_media.scss';
