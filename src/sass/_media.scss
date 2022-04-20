@@ -17,6 +17,18 @@
     .benefits__item{ 
         padding: 5px;
     }
+    .consultation {
+        &__header {
+            font-size: 32px;
+            padding-left: 40px;
+        }
+        &__descr {
+            padding-left: 40px;
+        }
+        .feed-form {
+            padding-left: 40px; 
+        }
+    }
  }
 
  @media (max-width: 767px) {    
@@ -49,7 +61,13 @@
             width: 350px;
             margin-top: 20px;
         }
-    }  
+    } 
+    .consultation {
+        &__header {
+            font-size: 29px;
+            line-height: 43px;
+        } 
+    }
 }
 
 @media (max-width: 575px) {
@@ -88,6 +106,24 @@
         }
     .benefits__item {
             width: 250px;
+        }
+    }
+    .consultation {
+        &__header {
+            font-size: 20px;
+            line-height: 32px;
+            padding: 0 10px;
+            text-align: center;
+        }
+        &__descr{
+            font-size: 18px;
+            padding: 0 10px;
+            text-align: center;
+        } 
+        .feed-form {
+            padding: 0 20px;
+            margin: 0 auto; 
+            margin-top: 36px;
         }
     }
 }
