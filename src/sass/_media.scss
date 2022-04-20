@@ -29,6 +29,23 @@
             padding-left: 40px; 
         }
     }
+    .slick-dots {
+        list-style-type: none;
+        margin: 10px 270px;
+        li {
+            display: inline-block;
+            margin-right: 10px;
+            button {
+                border-radius: 5px;
+            }
+        }
+    }
+    .slick-active {
+        button {
+            border: red;
+            background-color: rgb(250, 198, 198);
+        }       
+    }
  }
 
  @media (max-width: 767px) {    
@@ -67,6 +84,17 @@
             font-size: 29px;
             line-height: 43px;
         } 
+    }
+    .carousel {
+        &__inner {
+            width: 650px;
+            img {
+                width: 650px;
+            }
+        }
+        .slick-dots {
+            margin: 10px 240px;
+        }
     }
 }
 
@@ -124,6 +152,18 @@
             padding: 0 20px;
             margin: 0 auto; 
             margin-top: 36px;
+        }
+    }
+    .carousel {
+        &__inner {
+            width: 350px;
+            height: 300px;
+            img {
+                width: 350px;
+            }
+        }
+        .slick-dots {
+            margin: 10px 85px;
         }
     }
 }
