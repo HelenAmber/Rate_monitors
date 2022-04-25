@@ -96,6 +96,16 @@
             margin: 10px 240px;
         }
     }
+    .catalog__tab {
+        width: 170px;
+    }
+    .catalog__content {
+        justify-content: center;
+    }
+    .catalog-item {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
 
 @media (max-width: 575px) {
