@@ -233,4 +233,15 @@
             height: 70px;
         }
     }
+    .modal {
+        width: 322px;
+        min-height: 362px;
+        &__close {
+            right: 5px;
+            top: 5px;
+        }
+    }
+    .feed-form {
+        width: 250px;
+    }
 }

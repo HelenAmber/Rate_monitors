@@ -34,4 +34,52 @@ $(document).ready(function(){
 
     toggleSlide('.catalog-item__link');
     toggleSlide('.catalog-item_back');
+
+    //modal
+
+    $('[data-modal=consultation]').on('click', function(){
+        $('.overlay, #consultation').fadeIn('slow');
+    });
+    $('.modal__close').on('click', function(){
+        $('.overlay, #consultation, #order, #thanks').fadeOut('slow');
+    });
+    $('.button_mini').each(function(i) {
+        $(this).on('click', function(){
+            $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+            $('.overlay, #order').fadeIn('slow');
+        })
+    });
+
+    function valideForm(form) {
+        $(form).validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                  },
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                },
+                messages: {
+                    name: {
+                        required: "Пожалуйста, введите свое имя",
+                        minlength: jQuery.validator.format("Введите {0} символов!")
+                      },
+                    phone: "Пожалуйста, введите свой номер телефона",
+                    email: {
+                      required: "Необходимо указать Ваш email",
+                      email: "Необходимо указатьв email-адрес в формате name@domain.com"
+                    }
+                }
+            }
+        });
+    };
+
+    valideForm('#consultation-form');
+    valideForm('#consultation form');
+    valideForm('#order form');
+
+    $('input[name=phone]').mask("+38(999) 999-99-99");
   });
