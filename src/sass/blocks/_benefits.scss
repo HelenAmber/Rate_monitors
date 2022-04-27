@@ -28,6 +28,17 @@
             height: 70px;
         }
     }
+    &__img {
+        &_animated {
+            animation-name: heartbeat;
+            animation-duration: 1.4s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+        } 
+    }
     &__descr{
         margin-top: 35px;
         font-weight: 300;

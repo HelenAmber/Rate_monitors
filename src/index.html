@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -74,7 +75,7 @@
                     </div>
                 </div>
                 <div class="benefits__item">
-                    <img src="icons/heart.png" alt="heart_icon" class="benefits__img">
+                    <img src="icons/heart.png" alt="heart_icon" class="benefits__img benefits__img_animated">
                     <div class="benefits__descr">
                         <span>Заботимся о здоровье</span><br><br>
                         Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему 
@@ -102,13 +103,13 @@
             <form id="consultation-form" class="feed-form" action="#">
                 <input name="name" type="text" placeholder="Ваше имя">
                 <input name="phone" placeholder="Ваш телефон">
-                <input name+"email" type="email" placeholder="Ваш E-mail">
+                <input name="email" type="email" placeholder="Ваш E-mail">
                 <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
             </form>
         </div>
     </section> 
 
-    <section class="carousel">
+    <div class="carousel">
         <div class="container">
             <div class="carousel__inner">
                 <div>
@@ -122,7 +123,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <section class="catalog">
         <div class="container">
@@ -468,7 +469,7 @@
     <section class="reviews">
         <div class="container">
             <h2 class="reviews__header">отзывы клиентов</h2>
-            <div class="reviews__item">
+            <div class="reviews__item animate__animated animate__fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
                 <img src="img/review_1.png" alt="" class="reviews__item__img">
                     <div class="reviews__item__content">
                         <h3 class="reviews__item__title">Ирина Иванченко</h3>
@@ -482,7 +483,7 @@
                         </div>
                     </div>
             </div>
-            <div class="reviews__item">
+            <div class="reviews__item animate__animated animate__fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
                 <img src="img/review_2.png" alt="" class="reviews__item__img">
                 <div class="reviews__item__content">
                     <h3 class="reviews__item__title">Иван Сёмочкин</h3>
@@ -496,7 +497,7 @@
                     </div>
                 </div>
             </div>
-            <div class="reviews__item">
+            <div class="reviews__item animate__animated animate__fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
                 <img src="img/review_3.png" alt="" class="reviews__item__img">
                 <div class="reviews__item__content">
                     <h3 class="reviews__item__title">Юлия Дашкина</h3>
@@ -580,11 +581,12 @@
         <img src="img/up.svg" alt="chevron-up">
     </a>   
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script> 
 </body>
 </html>
