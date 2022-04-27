@@ -82,4 +82,20 @@ $(document).ready(function(){
     valideForm('#order form');
 
     $('input[name=phone]').mask("+38(999) 999-99-99");
+
+    //scroll
+
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 1600){
+            $('.page_up').fadeIn();
+        } else {
+            $('.page_up').fadeOut();
+        }
+    });
+
+    $("a[href^='#']").click(function(){
+        const _href = $(this).attr("href");
+        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+        return false;
+    });
   });
